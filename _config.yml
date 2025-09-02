@@ -1,7 +1,7 @@
 title: VLSI Hub
 description: Tutorials, news, stories, and community for VLSI and verification (Verilog, SystemVerilog, UVM).
 baseurl: ""
-url: "https://github.com/Parth0light/pradip.vlsi.github.io"
+url: "https:pradip.vlsi.github.io"
 theme: null
 markdown: kramdown
 plugins:
