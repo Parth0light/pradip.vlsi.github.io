@@ -1,0 +1,55 @@
+title: VLSI Hub
+description: Tutorials, news, stories, and community for VLSI and verification (Verilog, SystemVerilog, UVM).
+baseurl: ""
+url: "https://<your-username>.github.io"
+theme: null
+markdown: kramdown
+plugins:
+  - jekyll-feed
+permalink: /:categories/:year/:month/:day/:title/
+collections:
+  tutorials:
+    output: true
+    permalink: /tutorials/:name/
+  news:
+    output: true
+    permalink: /news/:name/
+  stories:
+    output: true
+    permalink: /stories/:name/
+defaults:
+  - scope: {path: "", type: "tutorials"}
+    values: {layout: tutorial}
+  - scope: {path: "", type: "news"}
+    values: {layout: post}
+  - scope: {path: "", type: "stories"}
+    values: {layout: post}
+  - scope: {path: ""}
+    values: {layout: default}
+paginate: 5
+paginate_path: "/page:num/"
+author:
+  name: Your Name
+  email: you@example.com
+  twitter: yourhandle
+  github: your-username
+  linkedin: your-link
+nav:
+  - title: Home
+    url: /
+  - title: Tutorials
+    url: /tutorials/
+  - title: News
+    url: /news/
+  - title: Stories
+    url: /stories/
+  - title: Q&A
+    url: /qa/
+  - title: About
+    url: /about/
+  - title: Contact
+    url: /contact/
+ads_enabled: true
+affiliate_disclaimer: "As an Amazon Associate, I earn from qualifying purchases. Some links may be affiliate links."
+google_analytics: ""
+adsense_client: "ca-pub-XXXXXXXXXXXXXXX" # replace later
